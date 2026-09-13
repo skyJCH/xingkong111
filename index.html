@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>xingkongJCH · 星空小站</title>
+<meta name="description" content="xingkongJCH 的个人官网 —— B站空间、最新视频与 Windows 原版镜像下载。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 星空背景（跟随鼠标视差） -->
+<div class="stars" aria-hidden="true"></div>
+
+<!-- ==================== 导航栏 ==================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#home">
+      <span class="logo-mark">X</span>
+      <span class="logo-text">xingkongJCH</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link" data-nav="home">首页</a>
+      <a href="#windows" class="nav-link" data-nav="windows">Windows 镜像</a>
+      <a href="https://space.bilibili.com/3706985165883748?spm_id_from=333.1007.0.0"
+         class="nav-link" target="_blank" rel="noopener noreferrer">B站空间</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="展开菜单" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<div class="site">
+
+  <!-- ==================== 首页 ==================== -->
+  <section class="page page-home active" id="page-home">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-avatar">X</div>
+      <h1 class="hero-title">xingkongJCH</h1>
+      <p class="hero-sub">星空之下 · 记录与分享</p>
+      <p class="hero-desc">
+        欢迎来到我的小站。这里聚合了 B 站空间、最新视频，
+        以及 Windows 原版镜像的下载入口。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-liquid hue-bili"
+           href="https://space.bilibili.com/3706985165883748?spm_id_from=333.1007.0.0"
+           target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.5 3.5l-2.5 2.5h-5.8L6.7 3.5 5.3 4.9 7.9 7.5H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-3.9l2.6-2.6-1.4-1.4zM4 10h16v8H4v-8zm5 2v4l4-2-4-2z"/>
+          </svg>
+          <span>进入 B 站空间</span>
+        </a>
+
+        <a class="btn-liquid hue-video"
+           href="https://www.bilibili.com/video/BV1kBYi6ZEmk/?spm_id_from=333.1387.homepage.video_card.click&vd_source=fdfc58d24c87481e0ea7dd39a5ea5d2f"
+           target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          <span>最新视频</span>
+        </a>
+
+        <a class="btn-liquid hue-win" href="#windows">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 5.6l7.4-1.05v6.95H3V5.6zm8.4-1.18L21 3.1v8.4h-9.6V4.42zM3 12.5h7.4v6.95L3 18.4V12.5zm8.4 0H21v8.4l-9.6-1.32V12.5z"/>
+          </svg>
+          <span>Windows 镜像下载</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 功能卡片 -->
+    <div class="features">
+      <a class="feature-card hue-bili"
+         href="https://space.bilibili.com/3706985165883748?spm_id_from=333.1007.0.0"
+         target="_blank" rel="noopener noreferrer">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.5 3.5l-2.5 2.5h-5.8L6.7 3.5 5.3 4.9 7.9 7.5H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-3.9l2.6-2.6-1.4-1.4zM4 10h16v8H4v-8zm5 2v4l4-2-4-2z"/>
+          </svg>
+        </span>
+        <h3>B站空间</h3>
+        <p>查看全部投稿、动态与收藏，欢迎关注。</p>
+      </a>
+
+      <a class="feature-card hue-video"
+         href="https://www.bilibili.com/video/BV1kBYi6ZEmk/?spm_id_from=333.1387.homepage.video_card.click&vd_source=fdfc58d24c87481e0ea7dd39a5ea5d2f"
+         target="_blank" rel="noopener noreferrer">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </span>
+        <h3>最新视频</h3>
+        <p>直达最新一期作品，第一时间观看。</p>
+      </a>
+
+      <a class="feature-card hue-win" href="#windows">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 5.6l7.4-1.05v6.95H3V5.6zm8.4-1.18L21 3.1v8.4h-9.6V4.42zM3 12.5h7.4v6.95L3 18.4V12.5zm8.4 0H21v8.4l-9.6-1.32V12.5z"/>
+          </svg>
+        </span>
+        <h3>Windows 镜像</h3>
+        <p>官方原版系统镜像，纯净安全下载。</p>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ==================== Windows 镜像下载页 ==================== -->
+  <section class="page page-windows" id="page-windows">
+
+    <div class="page-head">
+      <button class="back-btn" id="backBtn" type="button" aria-label="返回首页">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 5l-7 7 7 7"/>
+        </svg>
+        <span>返回首页</span>
+      </button>
+
+      <h2 class="page-title">Windows 镜像下载</h2>
+      <p class="page-sub">官方原版 · 纯净安全</p>
+    </div>
+
+    <div class="dl-list">
+
+      <a class="dl-item"
+         href="https://alive.tingshuxiansheng.cn/d/%E5%BE%AE%E8%BD%AF%E5%AE%98%E6%96%B9%E5%8E%9F%E7%89%88Windows%E7%B3%BB%E7%BB%9F/zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso?sign=tOLn_5eT9_x6PxgOH4UfDRj9X3QzSqGgjOMQOa3mC1U=:0"
+         target="_blank" rel="noopener noreferrer">
+        <span class="dl-icon i-blue">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 5.6l7.4-1.05v6.95H3V5.6zm8.4-1.18L21 3.1v8.4h-9.6V4.42zM3 12.5h7.4v6.95L3 18.4V12.5zm8.4 0H21v8.4l-9.6-1.32V12.5z"/>
+          </svg>
+        </span>
+        <span class="dl-body">
+          <span class="dl-title">Windows 11 企业版 LTSC 2024</span>
+          <span class="dl-desc">64 位 · 简体中文 · 官方原版</span>
+        </span>
+        <span class="dl-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="dl-item"
+         href="https://alive.tingshuxiansheng.cn/d/%E5%BE%AE%E8%BD%AF%E5%AE%98%E6%96%B9%E5%8E%9F%E7%89%88Windows%E7%B3%BB%E7%BB%9F/cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso?sign=Vf3zln-apKMjqWI-5AltkIxKh0ZvsPTqqXGYfFExYdQ=:0"
+         target="_blank" rel="noopener noreferrer">
+        <span class="dl-icon i-cyan">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 5.6l7.4-1.05v6.95H3V5.6zm8.4-1.18L21 3.1v8.4h-9.6V4.42zM3 12.5h7.4v6.95L3 18.4V12.5zm8.4 0H21v8.4l-9.6-1.32V12.5z"/>
+          </svg>
+        </span>
+        <span class="dl-body">
+          <span class="dl-title">Windows 10 企业版 LTSC 2019</span>
+          <span class="dl-desc">64 位 · 简体中文 · 官方原版</span>
+        </span>
+        <span class="dl-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="dl-item" href="https://next.itellyou.cn/" target="_blank" rel="noopener noreferrer">
+        <span class="dl-icon i-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12"/>
+            <path d="M7 11l5 5 5-5"/>
+            <path d="M4 20h16"/>
+          </svg>
+        </span>
+        <span class="dl-body">
+          <span class="dl-title">MSDN, 我告诉你</span>
+          <span class="dl-desc">经典第三方原版镜像站</span>
+        </span>
+        <span class="dl-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </span>
+      </a>
+
+    </div>
+
+    <p class="page-note">下载链接为第三方直链，如失效可通过 MSDN 镜像站获取。</p>
+
+  </section>
+
+</div>
+
+<!-- ==================== 页脚 ==================== -->
+<footer class="footer">
+  <p>© 2026 xingkongJCH · 星空小站</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
